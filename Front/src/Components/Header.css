@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  background-color: rgba(38, 38, 36, .8)
+}
+.link {
+  color: white;
+  font-size: 1.5em;
+  text-decoration-line: none;
+  text-align: center;
+}
+.title-home {
+  margin-left: 10vw;
+}
+.container-intro {
+  border: 1px solid grey;
+  border-radius: 10px 10px 10px 10px;
+  margin-left:2vw;
+  width:60vw;
+  background-color: rgba(176, 155, 107, .5)
+}
+.introduction {
+  width:56vw;
+  margin-left: 2vw;
+  font-size: 1.3em;
+}
