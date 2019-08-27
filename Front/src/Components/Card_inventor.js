@@ -4,6 +4,7 @@ import './Card_inventor.css'
 class Card_inventor extends Component {
     render() {
         return (
+            // use props for dynamic display, axios road inventors ! 
             <div className="card-profil">
                 <p>Photo</p>
                 <h3>Nom Prénom</h3>
