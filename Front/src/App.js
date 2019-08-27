@@ -3,6 +3,7 @@ import {Route, Switch} from 'react-router-dom'
 import Home from './Screen/Home'
 import Random from './Screen/Random'
 import Login from './Screen/Login'
+import SubmitStory from './Screen/SubmitStory';
 
 // import './Screen/Home.css'
 
@@ -14,7 +15,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/signin" component={Login} />
           <Route path="/random" component={Random} />
-          {/* <Route path="/submit" component={} /> */}
+          <Route path="/submit" component={SubmitStory} />
         </Switch>
     </div>
         </>
