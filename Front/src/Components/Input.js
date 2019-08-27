@@ -2,21 +2,18 @@ import React from 'react'
 
 const styleBase = {
   general: {
-    padding: '5px'
+    padding: '2vh'
   },
   input: {
     width: '100%',
     border: "none",
     outline: "none",
-    padding: "5px",
     background: 'inherit',
-    borderBottom: '1px solid black' 
+    borderBottom: '1px solid black',
+    marginTop: '3%'
   },
   span: {
-    padding: "5px"
-  },
-  button: {
-    float: 'right'
+    padding: "15px"
   }
 }
 
