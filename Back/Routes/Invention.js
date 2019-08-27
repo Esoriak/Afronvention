@@ -23,10 +23,8 @@ router.post("/addinventions", (req, res) => {
       name,
     }
   ]
-  console.log(formData)
   connection.query("INSERT INTO `Inventions` SET ?", formData, (err, results) => {
     if (err) {
-      console.log(err)
       res.status(500).send("Erreur lors de l'enregistrement de l'invention.")
     } else {
       console.log(results.insertId)

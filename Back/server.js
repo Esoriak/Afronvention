@@ -13,12 +13,10 @@ app.use(bodyParser.urlencoded({
 }))
 app.use(bodyParser.json())
 
-
-app.use('/auth', routes.Auth)
 app.get("/", (req, res) => {
-    res.status(200).send("It's your Home Page")
+    res.status(200).send("Hello world")
 })
-
+app.use('/auth', routes.Auth)
 
 app.listen(port, (err) => {
     if(err) {

@@ -7,7 +7,7 @@ const router = express.Router()
 router.get('/admin', (req, res) => {
   connection.query('SELECT * FROM admin', (err, results) => {
     if (err)
-      res.status(500).send('Erreur lors de la recuperation')
+      res.status(500).send('Erreur lors de la recuperation d\'un admin')
     else
       res.json(results)
   })
@@ -17,7 +17,7 @@ router.post('/admin', (req, res) => {
   const formData = req.body
   connection.query('INSERT INTO admin SET ?', formData, err => {
     if (err)
-      res.status(500).send('Erreur lors de l\'enregistrement')
+      res.status(500).send('Erreur lors de l\'enregistrement d\'un admin')
     else
       res.sendStatus(200)
   })
@@ -28,7 +28,7 @@ router.put('/admin/:id', (req, res) => {
   const formData = req.body
   connection.query('UPDATE admin SET ? WHERE idadmin = ?', [formData, idadmin], err => {
     if (err)
-      res.status(500).send('Erreur lors de la modification')
+      res.status(500).send('Erreur lors de la modification d\'un admin')
     else
       res.sendStatus(200)
   })
@@ -38,7 +38,7 @@ router.delete('/admin/:id', VerifyToken, (req, res) => {
   const idAdmin = req.params.id
   connection.query('DELETE FROM admin WHERE idadmin = ?', idAdmin, err => {
     if (err)
-      res.status(500).send('Erreur lors de la suppression')
+      res.status(500).send('Erreur lors de la suppression d\'un admin')
     else
       res.sendStatus(200)
   })
