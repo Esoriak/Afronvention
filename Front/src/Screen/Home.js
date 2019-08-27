@@ -3,6 +3,7 @@ import Header from '../Components/Header';
 
 import '../Screen/Home.css'
 import Card_inventor from '../Components/Card_inventor';
+import Footer from '../Components/Footer';
 
 class Home extends Component {
     render() {
@@ -12,6 +13,7 @@ class Home extends Component {
                 
                 <Header />
                 <Card_inventor />
+                <Footer />
             </div>
         )
     }
